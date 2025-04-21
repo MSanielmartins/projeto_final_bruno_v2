@@ -581,7 +581,7 @@ function parseAICommands(response, availableProducts) {
   
   // Verificar comando para remover do carrinho
   const removeCartMatch = response.match(cartCommandPatterns.removeFromCart);
-  if (removeCartMatch) {
+  if (removeCartMatch) {  
     const productId = removeCartMatch[1];
     const messageText = removeCartMatch[2];
     
